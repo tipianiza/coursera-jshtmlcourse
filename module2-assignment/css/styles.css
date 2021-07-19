@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    position: relative;
+}
+
+header {
+    font-weight: bolder;
+    font-size: 45px;
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+}
+
+body {
+    background: ghostwhite;
+    color: black;
+    font-weight: bold;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.item-one, .item-two, .item-three {
+    background: grey;
+    border: 2px solid black;
+    margin: 10px;
+    float: left;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    background: darkred;
+    color: white;
+    float: right;
+    width: 50%;
+    padding: 10px;
+    margin: 0px 0px 5px 0px;
+}
+
+.pork {
+    background-color: aquamarine;
+    color: black;
+}
+
+.beef {
+    background-color: yellow;
+    color: darkviolet;
+}
+
+.content {
+    font-size: 14px;
+    padding: 5px;
+    clear: both;
+}
+
+@media (min-width: 992px) {
+    .item-one, .item-two, .item-three {
+        width: 31%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .item-one, .item-two {
+        width: 47%;
+    }
+
+    .item-three {
+        width: 96%;
+    }
+
+    .title {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .item-one, .item-two, .item-three {
+        width: auto;
+    }
+
+    .title {
+        width: 30%;
+    }
+}
