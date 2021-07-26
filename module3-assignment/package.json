@@ -1,0 +1,22 @@
+{
+  "name": "module3-assignment",
+  "version": "1.0.0",
+  "description": "module3 assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0"
+  }
+}
